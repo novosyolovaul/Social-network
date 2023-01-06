@@ -1,0 +1,45 @@
+.content_post {}
+
+.post {
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.post_title {
+    font-size: 24px;
+    color: #4682B4;
+    margin: 20px 0 20px 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.post_posts {}
+
+.post_posts_item {}
+
+.textArea {
+    border-radius: 10px;
+    min-width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.postButton {
+    padding: 7px;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: #4682B4;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+.postButton:hover{
+    background-color: #7facd1;
+}
+.addPost{
+    margin-bottom: 15px;
+
+}

@@ -1,0 +1,63 @@
+.users_ava {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4682B4;
+}
+
+.users_wrapper {
+    display: grid;
+    grid-template-rows: minmax(50px, 1fr) minmax(30px, auto);
+    grid-template-columns: minmax(130px, auto) 1fr;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #4682B4;
+    border-radius: 10px;
+    gap: 7px;
+}
+
+.fullName {
+    color: #4682B4;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.status {
+    color: #4682B4;
+    font-size: 16px;
+}
+
+.button {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: #4682B4;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.counter {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.selectedPage {
+    color: #fff;
+    background-color: #4682B4;
+    margin: 0 5px;
+    padding: 2px 4px;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+.page {
+    color: #4682B4;
+    margin: 0 5px;
+}
+
+.page:hover{
+    font-size: 22px;
+}

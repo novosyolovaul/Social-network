@@ -1,0 +1,71 @@
+.loginWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {}
+
+.title {
+    font-size: 24px;
+    color: #4682B4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.formInput {
+    min-height: 40px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    width: 200px;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 16px;
+    transition: width 0.4s ease-in-out;
+}
+
+.formInput:focus {
+    width: 300px;
+    border: #4682B4 2px solid;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    letter-spacing: 1px;
+}
+
+.checkbox {
+    margin: 2px 0 10px 0;
+    min-width: 30px;
+}
+
+.rememberMe {
+    color: #4682B4;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    margin: -1px 0 0 7px;
+}
+
+.button {
+    color: #fff;
+    background-color: #4682B4;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
+
+.button:hover {
+    background-color: #14568c;
+}

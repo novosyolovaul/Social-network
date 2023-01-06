@@ -1,0 +1,26 @@
+.sidebar {
+    grid-area: sidebar;
+    background-color: #4682B4;
+    border-radius: 15px;
+}
+.sidebar_menu {
+    
+}
+.sidebar_list {
+    padding: 20px;
+}
+.sidebar_link {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 18px;
+    transition: background-color 0.2s ease-in-out;
+    padding: 5px;
+    border-radius: 7px;
+}
+.sidebar_link:hover{
+    background-color: #7facd1;
+}
+.sidebar_list li{
+    margin-bottom: 15px;
+}
+
