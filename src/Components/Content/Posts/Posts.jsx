@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 
 
 let Posts = (props) => {
-
     let messageEl = props.post.map((m) => <Post message={m.message} />)
     return (
         <div className={`${s.content_post} ${s.post}`}>

@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Preloader from "./Components/common/Preloader/Preloader";
 import ContentContainer from "./Components/Content/ContentContainer";
@@ -25,7 +25,7 @@ class App extends React.Component {
     }
 
     return (
-      <BrowserRouter>
+      <HashRouter>
         <div className="wrapper">
           <HeaderContainer store={this.props.store} />
           <Sidebar />
@@ -46,7 +46,7 @@ class App extends React.Component {
           </div>
           <Footer />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
