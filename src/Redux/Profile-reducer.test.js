@@ -9,9 +9,9 @@ let state = {
     ]
 };
 
-it('new post should be added', () => {
+test('new post should be added', () => {
     let action = addPost('newText')
     let newState = profileReduser(state, action);
-    expect(newState.posts.length).toBe(3);
+    expect(newState.post.length).toBe(3);
 });
 
