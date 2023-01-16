@@ -1,31 +1,14 @@
 import React from "react";
 import s from './Users.module.css';
 import { NavLink } from "react-router-dom";
-import { usersAPI } from "../../API/API";
+import Paginator from "../common/Preloader/Paginator/Paginator";
 
-
-
-let Users = (props) => {
-    let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
-
-    let pages = [];
-    for (let i = 1; i <= pagesCount; i++) {
-        pages.push(i);
-    }
-
-    let curP = props.currentPage;
-    let curPF = ((curP - 5) < 0) ? 0 : curP - 5;
-    let curPL = curP + 5;
-    let slicedPages = pages.slice(curPF, curPL);
+let Users = ({ totalUsersCount, pageSize, currentPage, selectedPage, ...props }) => {
     let defaultAva = "https://iconutopia.com/wp-content/uploads/2016/06/space-dog-laika1.png";
 
     return <div>
-        <div className={s.counter} >
-            {slicedPages.map(p => {
-                return <span className={props.currentPage === p ? s.selectedPage : s.page}
-                    onClick={() => { props.onPageChanged(p) }}>{p}</span>
-            })}
-        </div>
+        <Paginator selectedPage={selectedPage} currentPage={currentPage}
+            pageSize={pageSize} totalUsersCount={totalUsersCount} />
 
         {props.users.map(u =>
             <div key={u.id} className={s.users_wrapper}>

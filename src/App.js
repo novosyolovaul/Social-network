@@ -34,6 +34,7 @@ class App extends React.Component {
               <Route path='/content/:userId' element={<ContentContainer
                 store={this.props.store} />} />
               <Route path='/content' element={<ContentContainer />} />
+              <Route path='/' element={<ContentContainer />} />
               <Route path='message/*' element={<MessageContainer
                 store={this.props.store} />} />
               <Route path='/friends' element={<Friends />} />

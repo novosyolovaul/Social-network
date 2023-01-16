@@ -1,0 +1,22 @@
+.counter {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.selectedPage {
+    color: #fff;
+    background-color: #4682B4;
+    margin: 0 5px;
+    padding: 2px 4px;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+.page {
+    color: #4682B4;
+    margin: 0 5px;
+}
+
+.page:hover{
+    font-size: 22px;
+}

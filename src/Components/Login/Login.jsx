@@ -6,9 +6,9 @@ import { useForm } from "react-hook-form"
 import s from './Login.module.css';
 
 
-let LoginForm = (props) => {
+let LoginForm = ({loginThunk, errorMessage}) => {
     let onSubmit = (formData) => {
-        props.loginThunk(formData.email, formData.password, formData.rememberMe);
+        loginThunk(formData.email, formData.password, formData.rememberMe);
     }
     const {
         register,
@@ -52,7 +52,7 @@ let LoginForm = (props) => {
                 required: false,
             })} type='checkbox' />
             <span className={s.rememberMe} >remember me</span>
-            <div className={s.errorMessage} >{props.errorMessage}</div>
+            <div className={s.errorMessage} >{errorMessage}</div>
             <div>
                 <input className={s.button} type="submit" disabled={!isValid} />
             </div>
